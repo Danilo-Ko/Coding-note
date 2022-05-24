@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html id="home" lang="en" dir="ltr">
+    <html lang="ko">
+        <head>
+            <meta charset="utf-8">
+            <title>Coding Note</title>
+            <link rel="stylesheet" href="style.css">
+            <ul>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="current">코딩 언어</a>
+                    <div class="dropdown-content">
+                        <a href="html.html">HTML</a>
+                        <a href="css.html">CSS</a>
+                        <a href="javascript.html">JavaScript</a>
+                        <a href="bootstrap.html">Bootstrap</a>
+                        <a href="node.html">Node.JS</a>
+                        <a href="react.html">React</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="pojmovi.html">개념</a>
+                    <div class="dropdown-content">
+                        <a href="pojam-html.html">HTML</a>
+                        <a href="pojam-css.html">CSS</a>
+                        <a href="pojam-javascript.html">JavaScript</a>
+                        <a href="pojam-bootstrap.html">Bootstrap</a>
+                        <a href="pojam-node.html">Node.JS</a>
+                        <a href="pojam-react.html">React</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="projekti.html">프로젝트</a>
+                </li>
+
+                <li>
+                    <a href="dnevnik.html">코딩일기</a>
+                </li>
+                <li>
+                    <a href="pitanja.html">Q&A</a>
+                </li>
+            </ul>
+
+            <a href="index.html"><img class="title" src="Coding Note.jpg" alt="Coding Note">
+        </a>
+        <a href="#home"><img class="strelica" src="strelica.png"></a>
+        </head>
+
+        <style></style>
+        <body>
+            <h1>
+                계산기
+            </h1>
+            <style>
+                table {
+                    border-collapse: collapse;
+                }
+                td {
+                    padding: 5px 10px;
+                    text-align: center;
+                }
+                input {
+                    text-align: right;
+                    border: none;
+                }
+                input:focus {
+                    outline: none;
+                }
+            </style>
+
+            <table border="1">
+                <tr>
+                    <td colspan="4">
+                        <input type="text" id="display">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <input type="text" id="result">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">AC</td>
+                    <td onclick="add('/')">/</td>
+                </tr>
+                <tr>
+                    <td onclick="add(7)">7</td>
+                    <td onclick="add(8)">8</td>
+                    <td onclick="add(9)">9</td>
+                    <td onclick="add('*')">*</td>
+                </tr>
+                <tr>
+                    <td onclick="add(4)">4</td>
+                    <td onclick="add(5)">5</td>
+                    <td onclick="add(6)">6</td>
+                    <td onclick="add('-')">-</td>
+                </tr>
+                <tr>
+                    <td onclick="add(1)">1</td>
+                    <td onclick="add(2)">2</td>
+                    <td onclick="add(3)">3</td>
+                    <td onclick="add('+')">+</td>
+                </tr>
+                <tr>
+                    <td colspan="2" onclick="add(0)">0</td>
+                    <td onclick="add('.')">.</td>
+                    <td onclick = "calculate()">=</td>
+                </tr>
+            </table>
+
+            <script>
+                function add(char) {
+                    var display = document.getElementById('display');
+                    display.value = display.value + char;
+                }
+
+                function calculate() {
+                    var display = document.getElementById('display');
+                    var result = eval(display.value);
+                    document.getElementById('result').value = result;
+                }
+            </script>
+
+        </body>
+
+    </html>

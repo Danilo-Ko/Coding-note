@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html id="home" lang="en" dir="ltr">
+    <html lang="ko">
+        <head>
+            <meta charset="utf-8">
+            <title>Coding Note</title>
+            <link rel="stylesheet" href="style.css">
+            <ul>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">코딩 언어</a>
+                    <div class="dropdown-content">
+                        <a href="html.html">HTML</a>
+                        <a href="css.html">CSS</a>
+                        <a href="javascript.html">JavaScript</a>
+                        <a href="bootstrap.html">Bootstrap</a>
+                        <a href="node.html">Node.JS</a>
+                        <a href="react.html">React</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="pojmovi.html">개념</a>
+                    <div class="dropdown-content">
+                        <a href="pojam-html.html">HTML</a>
+                        <a href="pojam-css.html">CSS</a>
+                        <a href="pojam-javascript.html">JavaScript</a>
+                        <a href="pojam-bootstrap.html">Bootstrap</a>
+                        <a href="pojam-node.html">Node.JS</a>
+                        <a href="pojam-react.html">React</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="projekti.html"class="current">프로젝트</a>
+                </li>
+                <li>
+                    <a href="dnevnik.html">코딩일기</a>
+                </li>
+                <li>
+                    <a href="pitanja.html">Q&A</a>
+                </li>
+            </ul>
+
+            <a href="index.html"><img class="title" src="Coding Note.jpg" alt="Coding Note">
+        </a>
+        <a href="#home"><img class="strelica" src="strelica.png"></a>
+        </head>
+
+        <style></style>
+        <body>
+            <h1>
+                프로젝트
+            </h1>
+
+            <p> 여러가지 작은 프로젝트를 하며 배우는 배용을 정리합니다.</P>
+
+            <h3 class="pitanja">
+                각종 환산식  <a href=https://1drv.ms/x/s!Ag0jmwzoYQPwgu95YuFCTQujn15iJQ?e=zkcPg2" target="_blank"> 프로젝트 (환산식) 엑셀 관리
+                    </a>
+            </h3>
+            <form>
+                단위<br/>
+                <select name = "subject" size = "1">
+                    <option value = "평">평</option>
+                    <option value = "평방미터">평방미터</option>
+                    <option value = "야드">야드</option>
+                    <option value = "미터">미터</option>
+                    <option value = "센티">센티</option>
+                    <option value = "인치">인치</option>
+                </select>
+            </form>	
+
+            <input id="input" type="number" class="calculate"> <!--input 태그는 닫는 태크를 안 쓴다! -->
+            <input id="kvadrat" type="button" value="평" >
+            <button id="sum">계산</button>
+            <input id="result" class="calculate">
+            <input id="kvadrat2" type="button" value="평방미터">
+
+            <script>
+            // document.addEventListener('DOMContentLoaded', () => {
+                const input = document.querySelector('#input') 
+                const kvadrat = document.querySelector('#kvadrat')
+                const sum = document.querySelector('#sum')
+                const result = document.querySelector('#result')
+                const kvadrat2 = document.querySelector('#kvadrat2')
+                
+                kvadrat.addEventListener("click", () => {
+                    if (kvadrat.value === '평'){
+                        kvadrat.value = '평방미터'
+                        kvadrat2.value='평'
+                    } else {
+                        kvadrat.value ='평'
+                        kvadrat2.value='평방미터'
+                    }
+                })
+
+                sum.addEventListener("click", () => {
+                    if (kvadrat.value === '평'){
+                        result.value = Math.round(input.value * 3.3)
+                    } else {
+                        result.value = Math.round(input.value/3.3)
+                    }
+                })
+        // })
+                
+
+
+            </script>
+
+
+        </body>
+        
+                <!-- <h3 class="pitanja"> </h3> // <p><b> </b></P> // <p> </P> // <p><a href=" "
+        target="_blank"> </a></P> -->
+    </html>

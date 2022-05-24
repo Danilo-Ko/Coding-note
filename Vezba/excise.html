@@ -1,0 +1,271 @@
+<html>
+
+<head>
+
+</head>
+<body>
+<!--
+
+<form>
+	단위<br/>
+	<select name = "subject" size = "1">
+		<option value = "평">평</option>
+		<option value = "평방미터">평방미터</option>
+		<option value = "야드">야드</option>
+		<option value = "미터">미터</option>
+		<option value = "센티">센티</option>
+		<option value = "인치">인치</option>
+	</select>
+</form>	
+let userID = prompt("아이디를 입력하세요","");
+let userPW = prompt("비밀번호를 입력하세요~","");
+
+if( userID == "webstoryboy" && userPW == "1234"){
+	document.write("환영합니다.<br><br>");
+} else if( userID == "webstoryboy" ) {
+	document.write("비밀번호가 틀렸습니다.<br><br>");
+} else if( userPW == "1234" ) {
+	document.write("아이디가 틀렸습니다.<br><br>");
+} else {
+	document.write("아이디 또는 비밀번호가 틀렸습니다.");
+}
+</script>
+ function calculate (Plus, x, y) { 
+	 x + y
+ }
+
+ <script>
+	let num = prompt("100 미만의 정수만 입력하세요.");
+	if(num>100){
+		alert("정수" + num + "(은)는 100보다 작지 않습니다.");
+	}else{
+		document.write("입력하신 값은" + num + "으로 100보다 작습니다.");
+	} 
+	
+	
+	
+</script>
+
+ <script>
+		let planeti = ["Merkur", "Venura", "Zemlja", "Mars", "Jupiter", "Saturn", "Uran", "Neptun", "Pluton"];
+	for (let i = 0; i<9; i++){ 
+
+		alert(planeti[i]);
+	}
+</script> 
+ <script>
+	function process (game){
+		if(game==true){
+			alert("좋습니다. 게임을 시작합니다.")
+		}else{
+			alert("네. 나중에 하지요.");
+		} 
+	}
+	var game = confirm ("게임 한 판 하실래요?");
+	process(game);
+	
+</script> 
+ <script>
+
+let i = confirm("확인을 누르면 웹페이지에 true 값이 출력됩니다!");
+document.write(i);
+</script> 
+
+ <script>
+	function music () {
+		let song = {
+			"가수": "다윗과 요나단",
+			"연주시간": "5분",
+			"제목": "담대하라"
+		}
+		document.write("그 노래의 제목은 " + song["제목"] + " 입니다.<br/>");
+		document.write("제가 좋아하는 가수는" + song["가수"] + " 입니다.<br/>");
+		document.write("그 노래의 연주시간은 " + song["연주시간"] + " 입니다.");
+	}
+	music();
+</script> 
+
+
+	<script>
+
+		let numbers1 = [20,10,9,8,7,6,5,4,3,2,1];
+		console.log(numbers1.sort());  // . 앞에 무언가가 있으면 그건 바로 객체이다. numbers라고 되어 있는 것은 배열 객체이다.
+	</script>  // sort는 객체에 속해 있으므로 메소드라 한다.
+	
+getElementById
+
+
+
+
+-->
+<!-- <input id="input" type="number" class="calculate"> -->
+
+<!-- document.getElementById('input').velue
+let a =1;
+let b =2; 
+
+<input id="trans" type="number" class="calculate">
+
+
+<script>
+document.getElementById("trans").innerHTML = 5 + 6;
+</script>
+
+<input id='result' class="calculate">
+-->
+
+<!-- 19) 기타 제어문 (TCP School) 
+1에서 100까지 3의 배수만 제외하고 출력
+
+<script>
+let exceptNum = 3;
+for (let i =0; i<101; i++) {
+
+	if(i%exceptNum==0)
+	continue;
+	document.write(i + " ");
+}
+</script>
+
+ 라벨을 이용하여 구구단의 값이 홀수인 경우에만 출력값 
+
+<script>
+gugudan:
+for( let i = 2; i <=9; i++){
+	dan:
+for( let j = 1; j <=9; j++){
+		if((i*j)% 2 == 0 )
+	continue dan;
+	document.write(i + "*" + j + "=" + (i*j) + "<br>");
+ }
+}
+</script>
+
+
+
+<script>
+	
+	let cars = ["volvo", "Mercedes", "Hyundai", "Kia"];
+	let numberOne = "Mercedes";
+	for( let i =0; i<cars.length; i++){
+		if(cars[i] == numberOne){
+			document.write(numberOne + " 차는 " + (i + 1) + "번째 차입니다.");
+			break;
+		}
+	}
+	
+</script>
+
+
+
+<script>
+	gugudan:
+	for(let i = 2; i<=9; i++){
+		dan:
+		for(let j = 1; j<=9; j++){
+			if(i>3)
+				break gugudan;
+			document.write(i + " * " + j + " = " + (i*j) + "<br>");
+		}
+	}
+	
+</script>
+
+
+<script>
+	let x = 10;
+	switch (typeof x){
+		case "number":
+			document.write("변수 x의 타입은 숫자입니다.");
+			break;
+		case "string":
+			document.write("변수 x의 타입은 문자열입니다.");
+			break;
+		case "object":
+			document.write("변수 x의 타입은 객체입니다.");
+			break;
+		default:
+			document.write("변수 x의 타입을 잘 모르겠네요...");
+			break;
+	}
+	
+</script>
+
+
+
+
+<script>
+	let arr = [3,4,5];
+	
+	for(let i =0; i <arr.length; i++){
+		document.write(i + " ");
+
+	}
+
+	for(let i in arr){
+		document.write(i + " ");
+	}
+	
+</script>
+
+<script>
+	let obj ={name:"이순신", age:25};
+	for(let i in obj){
+		document.write(i + " ");
+	}
+	
+</script>
+-->
+
+<!-- <script>
+	let arr = [3,4,5];
+	
+	for(let i =0; i <arr.length; i++){
+		document.write(arr[i] + " ");
+
+	}
+
+	for(let value of arr){
+		document.write(value + " ");
+	}
+	
+</script> -->
+
+
+<script>
+	
+	
+</script>
+
+<!-- <script>
+	
+	
+</script>
+ -->
+
+<!-- 
+<br><br>
+<br><br>
+<br><br>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript addEventListener()</h2>
+
+<p>This example uses the addEventListener() method to attach a click event to a button.</p>
+
+<button id="myBtn">Try it</button>
+
+<script>
+const myBtn = document.getElementById("myBtn")
+	myBtn.addEventListener("click", () => {
+  alert("Hello World!");
+});
+</script>
+
+</body>
+</html>
+
