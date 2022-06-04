@@ -266,6 +266,46 @@ const myBtn = document.getElementById("myBtn")
 });
 </script>
 
+-->
+
+<input type="number" id ="input" required />
+<input type ="button" id ="in-unit" value ="평" />
+<input type="button" id = "calculation" value = "계산" />
+<input type="number" id ="output" />
+<input type ="button" id ="out-unit" value ="평방미터" /> 
+
+<script>
+
+const inputForm = document.querySelector ("#input");
+const inputUnit = document.querySelector ("#in-unit");
+const outputForm = document.querySelector ("#output");
+const outputUnit = document.querySelector ("#out-unit");
+
+inputUnit.addEventListener("click", () => {
+
+if (inputUnit.value === "평방미터") {
+	inputUnit.value = "평";
+	outputUnit.value = "평방미터";
+} else {
+	inputUnit.value = "평방미터";
+	outputUnit.value = "평";
+}
+})
+
+calculation.addEventListener("click", () => {
+		if(inputUnit.value === "평") {
+			outputForm.value = Math.round(inputForm.value * 3.3);
+		} else {
+			outputForm.value = Math.round(inputForm.value / 3.3);
+		}
+	})
+
+
+
+
+</script>
+
 </body>
 </html>
+
 
