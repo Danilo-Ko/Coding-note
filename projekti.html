@@ -119,19 +119,19 @@
 
                     <h3 class="pitanja"> 2) 그림판 만들기 </h3>
                     <p><b>이미지를 삽입하기 위해서</b> <br><br>
-                    1) HTML에서 file input을 만들고 event listener를 추가한다. 이미지 구현을 위한 Event를 만들 때는 click 이 아닌 change로 해야. <br>
-                    2) 파일을 선택하면 업로드한 파일을 가져오고 그 파일을 가리키는 URL을 요청한다. <br>
-                    3) 이미지를 만들기 위해서 이미지의 URL을 설정해야함.<br>
-                    4) 이미지가 로딩되면 canvas에 이미지를 그린다.
+                        1) HTML에서 file input을 만들고 event listener를 추가한다. 이미지 구현을 위한 Event를 만들 때는 click 이 아닌 change로 해야. <br>
+                        2) 파일을 선택하면 업로드한 파일을 가져오고 그 파일을 가리키는 URL을 요청한다. <br>
+                        3) 이미지를 만들기 위해서 이미지의 URL을 설정해야함.<br>
+                        4) 이미지가 로딩되면 canvas에 이미지를 그린다.
                     </P>
                     
                     <p><b> 그림판에서 그림 저장 </b></P>  
-                    <p> 1) url 선언(canvas.toDataURL())<br>
-                        2) a 선언 (document.createElement) <br>
-                        3) a 에 링크 연결<br>
-                        4) a 다운로드 하도록 이름을 지정.<br>
-                        5) a 클릭할 수 있게 함.<br>
-                    </P>
+                        <p> 1) url 선언(canvas.toDataURL())<br>
+                            2) a 선언 (document.createElement) <br>
+                            3) a 에 링크 연결<br>
+                            4) a 다운로드 하도록 이름을 지정.<br>
+                            5) a 클릭할 수 있게 함.<br>
+                        </P>
                     <p><b> 텍스트 입력 </b></P>  
                     <p> 1) Event를 더블클릭으로 (dblclick) <br>
                         2) text 값을 선언(텍스트에 대한 정의)<br>
@@ -141,12 +141,19 @@
                     <p><b> 그림판 V2 완성 후 과제 </b></P>
                     <p> 1) 그림판에 입력하는 글자 크기를 자유롭게 조절. (노마트 코드의 회원님의 작품을 통해 배움) <br>
                         2) 글꼴 변경(노마트 코드의 회원님의 작품을 통해 배움)
-                        ctx.font 에는 항상 글꼴 크기와 글꼴이 같이 가야한다.<br>
+                        ctx.font 에는 항상 글꼴 크기와 글꼴이 같이 가야한다. <br>
+                        <참고 링크>
+                        <p><a href="https://developer.mozilla.org/ko/docs/Web/API/Canvas_API/Tutorial/Drawing_text"
+                            target="_blank"> </a></P>
+                        
                         3) 입력된 글자들을 원하는 곳으로 이동.<br>
-                 </P>
-
-        </body>
-        
+                    </P>
+                    <h3 class="pitanja"> 3) 게시판 만들기 </h3>
+                    <p><b>게시판을 만들어 글들을 깔끔하게 정리</b> <br><br>
+                        <p> 모르긴 해도 게시판을 만들려면 백엔드까지 해야하는 것으로 알고 있다. 쉽지 않은 프로젝트가 될 것 같다!. </p>
+                    
+                </body>
+                
                 <!-- <h3 class="pitanja"> </h3>  <p><b> </b></P>  <p> </P>  <p><a href=" "
-        target="_blank"> </a></P> -->
+                    target="_blank"> </a></P> -->
     </html>
