@@ -52,70 +52,10 @@
 
             <p> 여러가지 작은 프로젝트를 하며 배우는 배용을 정리합니다.</P>
 
-            <h3 class="pitanja">
-                1) 각종 환산식  <a href=https://1drv.ms/x/s!Ag0jmwzoYQPwgu95YuFCTQujn15iJQ?e=zkcPg2" target="_blank"> 프로젝트 (환산식) 엑셀 관리
-                    </a>
-            </h3>
-            <form id="calculator">
-                <input id="input" type="number"/>&nbsp <!--input 태그는 닫는 태크를 안 쓴다! -->
-                    <select id = "kvadrat" name = "subject" size = "1">
-                        <option value = "평">평</option>
-                        <option value = "평방미터">평방미터</option>
-                        <option value = "야드">야드</option>
-                        <option value = "미터">미터</option>
-                        <option value = "센티">센티</option>
-                        <option value = "인치">인치</option>
-                    </select> &nbsp&nbsp
-                <input id="sum" type ="button" value ="계산" />&nbsp&nbsp
-                <input id="result">&nbsp
-                <input id="kvadrat2" type="button" value="평방미터">
-            </form>
-                <script>
-                    const input = document.querySelector('#input');
-                    const kvadrat = document.querySelector('#kvadrat');
-                    const sum = document.querySelector('#sum');
-                    const result = document.querySelector('#result');
-                    const kvadrat2 = document.querySelector('#kvadrat2')
-                    
-                    kvadrat.addEventListener("click", () => {
-                        if (kvadrat.value === "평"){
-                            kvadrat.value === "평방미터";
-                            kvadrat2.value="평방미터";
-                        } else if(kvadrat.value ==='평방미터'){
-                            kvadrat.value === "평";
-                            kvadrat2.value="평";
-                        }else if(kvadrat.value ==="미터"){
-                            kvadrat.value === "야드";
-                            kvadrat2.value="야드";
-                        }else if(kvadrat.value ==="야드"){
-                            kvadrat.value === "미터";
-                            kvadrat2.value="미터";
-                        }else if(kvadrat.value ==="센티"){
-                            kvadrat.value === "인치";
-                            kvadrat2.value="인치";
-                        }else if(kvadrat.value ==="인치"){
-                            kvadrat.value === "센티";
-                            kvadrat2.value="센티";
-                        }
-                    })
-    
-                    sum.addEventListener("click", () => {
-                        if (kvadrat.value === "평"){
-                            result.value = Math.round(input.value * 3.3)
-                        } else if (kvadrat.value === "평방미터") {
-                            result.value = Math.round(input.value/3.3)
-                        } else if (kvadrat.value === "미터") {
-                            result.value = Math.round(input.value/0.9144)
-                        } else if (kvadrat.value === "야드") {
-                            result.value = Math.round(input.value*0.9144)
-                        } else if (kvadrat.value === "센티") {
-                            result.value = Math.round(input.value/2.54)
-                        } else if (kvadrat.value === "인치") {
-                            result.value = Math.round(input.value*2.54)
-                        }
-                    })
+            <h3 class="pitanja"> 1) 각종 환산식 </h3>
+            
+            <p><a href="https://danilo-ko.github.io/Unit-caculator/ "target="_blank">각종 환산식 </a></p> 
 
-                </script>
 
                     <h3 class="pitanja"> 2) 그림판 만들기 </h3>
 
