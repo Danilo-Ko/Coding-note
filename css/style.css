@@ -118,7 +118,7 @@ li a:hover:not(.current) {
 body {
     background-color: white;
     padding: 100px 20px 10px 100px;
-    margin: 0 15%;
+    margin: 0 5%;
 }
 button {
     font-size: 25px;
