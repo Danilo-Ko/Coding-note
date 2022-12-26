@@ -223,18 +223,19 @@ ul {
         padding: 3px 35px 3px 55px;
         line-height: 35px;
     }
-    @media(max-width:500px) {
+    @media(max-width:600px) {
         body {
-            padding: 175px 20px 10px;
+            padding: 130px 20px 10px;
             margin: 0 5px;
         }
         li {
             padding: 2px;
             font-size: 20px;
+            margin: 0 2px;
         }
 
         ul {
-            padding: 80px 0 0 15px;
+            padding: 75px 0 0 0;
             position: none;
             margin: 0 0 0 0px;
             height: 65px;
