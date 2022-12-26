@@ -117,7 +117,7 @@ li a:hover:not(.current) {
 }
 body {
     background-color: white;
-    padding: 20px 20px 10px 1px;
+    padding: 80px 20px 10px 1px;
     margin: 0 5%;
 }
 button {
@@ -223,7 +223,7 @@ ul {
         padding: 3px 35px 3px 55px;
         line-height: 35px;
     }
-    @media(max-width:600px) {
+    @media(max-width:500px) {
         body {
             padding: 130px 20px 10px;
             margin: 0 5px;
