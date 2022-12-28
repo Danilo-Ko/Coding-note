@@ -27,7 +27,8 @@
                         <a href="pojam-node.html">Node.JS</a>
                         <a href="pojam-react.html">React</a>
                     </div>
-                </li>                <li>
+                </li>
+                <li>
                     <a href="projekti.html">프로젝트</a>
                 </li>
 
@@ -39,8 +40,8 @@
                 </li>
             </ul>
             <a href="index.html"><img class="title" src="img/Coding Note.jpg" alt="Coding Note">
-        </a>
-        <a href="#home"><img class="strelica" src="img/strelica.png"></a>
+            </a>
+            <a href="#home"><img class="strelica" src="img/strelica.png"></a>
         </head>
         <body>
             <h1>
@@ -49,12 +50,10 @@
             <p>
                 JavaScript를 공부하며 배우는 개념들을 정리하였습니다.
             </p>
+            <h3 class="h3-1">1)삼항 연산자(ternary operator, ternarni operator)
+            </h3>
             <p>
-                <b>삼항 연산자(ternary operator, ternarni operator)</b>
-            </p>
-            <p>
-                삼항 연산자는 유일하게 피연산자를 세 개나 가지는 조건 연산자입니다.
-                객체 지향 프로그래밍(OOP)에서
+                삼항 연산자는 유일하게 피연산자를 세 개나 가지는 조건 연산자입니다. 객체 지향 프로그래밍(OOP)에서
                 <b>인스턴스(instance)
                 </b>는 해당 클래스의 구조로 컴퓨터 저장공간에서 할당된 실체를 의미한다. 여기서 클래스는 속성과 행위로 구성된 일종의 설계도이다. OOP에서
                 객체는 클래스와 인스턴스를 포함한 개념이다. 이해하기 쉽게 일반적인 단어로 설명하자면, 계산 문제를 '입력과 출력이 명확히 기술된 것'으로
@@ -83,7 +82,7 @@
                 실행될 실행문이 한 줄뿐이라면
                 <mark>대괄호(&lcub;&rcub;)</mark>를 생략할 수 있음.
             </p>
-            <h3 class="h3-1">프로그래밍 초보자의 실수
+            <h3 class="h3-1">2) 프로그래밍 초보자의 실수
             </h3>
             <div class="jsalert">
                 <pre class="prebox">
@@ -93,68 +92,101 @@
             </pre>
             </div>
             <p>위의 예제는 변수 x와 y의 값이 같으면 두 변수가 같다는 문자열을 출력하려고 하는 예제입니다. 하지만 if 문의 표현식에서 동등
-                연산자(==)를 사용해야 할 곳에 잘못해서 대입 연산자(=)을 사용했습니다.
-                          For나 IF 문 뒤에는
+                연산자(==)를 사용해야 할 곳에 잘못해서 대입 연산자(=)을 사용했습니다. For나 IF 문 뒤에는
                 <mark>
                     <b>&semi;</b>
                 </mark>를 붙이지 않는다. For 문 선언부가 끝나면
                 <mark>
                     <b>&lcub; &rcub;</b>
                 </mark>를 넣어야 한다.</p>
-            <p>
-            <b>리터럴(literal, doslovno)</b>: 직접 표현되는 값 그 자체를 의미합니다.<br><br>
-            <b>식별자(identifier, identifikator)</b>: 변수나 함수의 이름을 작성할 때 사용하는 이름을 의미합니다.
-            자바스크립트에서 식별자는 영문자(대소문자), 숫자, 언더스코어(_) 또는 달러($)만을 사용할 수 있습니다. 키워드(keyword) 또는
-            예약어(reserved word): 자바스크립트에서는 몇몇 단어들을 특별한 용도로 사용하기 위해 미리 예약하고 있습니다.
-            <br><br>
-            <b>인수(argument, argument)</b>: 자비스크립트에서 함수는 문법적 구문일뿐만 아니라 값(value)이고도 합니다. 따라서
-            함수가 변수에 대입될 수도 있으며, 다른 함수의 인수로 전달될 수도 있습니다.</p>
-            <p><b> 매개 변수(parameter)</b>는 매세드 선언의 변수 목록을 나타냅니다. 인수는 메서드가 호출될 때 전달되는 실제 값입니다.
-            <br>
-            function sum(number1, number2){ // 여기서 number1, number2 는 <mark>매개변수(parameter)</mark><br>
-                return numer1 + number2;<br>
-            }<br>
-                    
-            sum(4,3); // (4,3)은 <mark>인자 (Argument)</mark><br></p>
 
-            <p><b>문서 객체 모델(DOM, Document Object Model) </b></P> 
-            <p> HTML 문서나 XML 문서에 접근하기 위한 <mark>일종의 인터페이스</mark>입니다.<br>
+            <h3 class="h3-1">3) 리터럴(literal, doslovno)
+            </h3>
+            <p>직접 표현되는 값 그 자체를 의미합니다.</p>
+
+            <h3 class="h3-1">4) 식별자(identifier, identifikator)
+            </h3>
+            <p>변수나 함수의 이름을 작성할 때 사용하는 이름을 의미합니다.
+                <br>
+                자바스크립트에서 식별자는 영문자(대소문자), 숫자, 언더스코어(_) 또는 달러($)만을 사용할 수 있습니다. 키워드(keyword) 또는
+                예약어(reserved word): 자바스크립트에서는 몇몇 단어들을 특별한 용도로 사용하기 위해 미리 예약하고 있습니다.</p>
+
+            <h3 class="h3-1">5) 인수(argument)
+            </h3>
+            <p>자비스크립트에서 함수는 문법적 구문일뿐만 아니라 값(value)이고도 합니다. 따라서 함수가 변수에 대입될 수도 있으며, 다른 함수의
+                인수로 전달될 수도 있습니다.
+            </p>
+
+            <h3 class="h3-1">
+                6) 매개 변수(parameter)</h3>
+            <p>매세드 선언의 변수 목록을 나타냅니다. 인수는 메서드가 호출될 때 전달되는 실제 값입니다.<br><br>
+                function sum(number1, number2){ // 여기서 number1, number2 는
+                <mark>매개변수(parameter)</mark><br>
+                return numer1 + number2;<br>
+                }<br>
+
+                sum(4,3); // (4,3)은
+                <mark>인자 (Argument)</mark><br><br>
+
+                함수에서 입력값을 받기 위해서 매개변수가 필요하고 그 매개변수에 해당하는 값을 인자라 한다.
+                <br>
+
+                값 자체는 인자, 그 값은 받는 것은 매개변수라 한다.
+            </p>
+            <img src="/img/parametri-argument.png">
+
+            <h3 class="h3-1">7) 문서 객체 모델(DOM, Document Object Model)
+            </h3>
+            <p>
+                HTML 문서나 XML 문서에 접근하기 위한
+                <mark>일종의 인터페이스</mark>입니다.<br>
                 이 모델은 문서 내의 모든 요소의 목적과 특징을 정의하고, 각각의 요소에 접근하는 방법을 제공합니다.<br>
                 DOMContentLoaded 이벤트는 document 객체에서 발생합니다.<br>
                 따라서 이 이벤트를 다루려면 addEventListener를 사용해야 합니다.<br>
                 document.addEventListener("DOMContentLoaded", ready);
                 <a href="https://ko.javascript.info/onload-ondomcontentloaded" target="_blank">DOMContendLoaed</a>
-            </P>
-            <p><b> 다양한 형태의 날짜 추출법 </b></P>
+            </p>
+
+            <h3 class="h3-1">8)다양한 형태의 날짜 추출법
+            </h3>
             <p>
                 &lt;script><br><br>
                 let a = new Date ('8/24/2009 14:52:10');<br>
                 let b = new Date (2009, 7, 24, 14, 52, 10);<br>
                 let c = new Date('December 25, 22 00:00:00');<br>
                 document.write(a);<br><br>
-            &lt;/script>
+                &lt;/script>
             </p>
-            <p><b> Image 표현법 </b></p> <p> JS에서 const image = new Image() 는 
-                HTML에서 &lt;img src=""/&gt;&lt;/img&gt;와 같다.</p>
-<p> <b>또 다른 event listner 추가 방법</b></p> <p> 기존 방식 -> canvas.addEventListener("mousemove", onMove);<br>
-또 다른 방식 -> canvas.onmousemove = function ()&#123;
-    
-&#125;</p>
-            <p><b> ctx.drawImage 표현법 </b></p> 
+            <h3 class="h3-1">9) Image 표현법</h3>
             <p>
-            ctx.drawImage(image, 0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);<br>
-            이걸 자꾸 헷갈려서 () 대신에 = 를 넣어서 오류가 났다! ㅠㅠ
+                JS에서 const image = new Image() 는 HTML에서 &lt;img src=""/&gt;&lt;/img&gt;와 같다.</p>
+            <p></p>
+            <h3 class="h3-1">10) event listner 를 추가하는 또 다른 방법</h3>
+            <p>
+                기존 방식 -> canvas.addEventListener("mousemove", onMove);<br>
+                또 다른 방식 -> canvas.onmousemove = function ()&#123; &#125;</p>
+            <p>
+            <h3 class="h3-1"> 11) ctx.drawImage 표현법</h3>
+            <p>
+                ctx.drawImage(image, 0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);<br>
+                이걸 자꾸 헷갈려서 () 대신에 = 를 넣어서 오류가 났다! ㅠㅠ
             </p>
-            <p><b> ctx.lineCap </b></p>  <p> 그림판의 라인의 끝을 어떻게 할 것인가에 대한 것이다. butt, round, squre가 있는데 round로 해주면 둥글게 나온다.</p>
 
-            <h3 class="h3-1">화살표 함수</h3> 
-            <p>화살표 함수 표현(arrow function expression)은 전통적인 함수표현(function)의 간편한 대안입니다. 하지만, 화살표 함수는 몇 가지 제한점이 있고 모든 상황에 사용할 수는 없습니다. </p> 
-            <p><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Functions/Arrow_functions "target="_blank">화살표 함수 </a></p> 
-        <!-- 
-            <h3 class="h3-1"> </h3> 
-            <p><b> </b></p> 
-            <p> </p> 
-            <p><a href=" "target="_blank"> </a></p> 
-        -->
-                </body>
-            </html>
+            <h3 class="h3-1">12) ctx.lineCap</h3>
+            <p>
+                그림판의 라인의 끝을 어떻게 할 것인가에 대한 것이다. butt, round, squre가 있는데 round로 해주면 둥글게 나온다.</p>
+
+            <h3 class="h3-1">13) 화살표 함수</h3>
+            <p>화살표 함수 표현(arrow function expression)은 전통적인 함수표현(function)의 간편한 대안입니다. 하지만,
+                화살표 함수는 몇 가지 제한점이 있고 모든 상황에 사용할 수는 없습니다.
+            </p>
+            <p>
+                <a
+                    href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Functions/Arrow_functions "
+                    target="_blank">화살표 함수
+                </a>
+            </p>
+            <!-- <h3 class="h3-1"> </h3> <p><b> </b></p> <p> </p> <p><a href="
+            "target="_blank"> </a></p> -->
+        </body>
+    </html>

@@ -101,15 +101,14 @@
         var x = 10, y = 10, z = 10;
         x = x - 5;
         y -= 5; // y = y - 5 와 같은 표현임. 
-
         </pre>
         <h3 class="h3-1">6) 증감 연산자 (increment and decrement operator)
         </h3>
         <p>
             <img style="width:80%" ;=";" src="img/operator2.jpg" alt="Operator">
-            <br>
+            <br><br>
             <a href="https://codingadinga.tistory.com/11" target="_blank">
-                증감연산자 설명</a><br>
+                증감연산자 설명</a><br><br>
             (++x -3) 인 경우 x에 1을 더 한 후에 3을 뺀 값이 출력값(8)이고 넘겨가는 x값은 1이 증가한 11일 된다.
             <br>
             (y++ - 3)인 경우 y값에 먼저 3을 뺀 값이 출력값(7)이 되고 넘어가는 y값은 계산한 후에 1이 증가한 11이 된다.
@@ -125,7 +124,7 @@
             <a
                 href="https://medium.com/gdana/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EB%B9%84%ED%8A%B8-%EC%97%B0%EC%82%B0%EC%9E%90-5f772ffa35e8"
                 target="_blank">
-                비트 연산자 설명</a><br>
+                비트 연산자 설명</a><br><br>
             비트는 0과 1되어 있으므로 x
             <<1은 x 쪽으로 1비트(2) 이동하라는 뜻으로 x * 2를 해주면 되고 y >>
             1은 y 반대쪽으로 1비트(2) 이동하라는 뜻으로 y /2를 해주면 된다.
@@ -252,83 +251,13 @@
             variablename = (condition) ? value1:value2
         </pre>
         
-        <h3 class="h3-1"> Quiz 6 </h3>
-        
-        <p> <b>1에서 100까지 3의 배수만 제외하고 출력</b><br></p>
-        <pre>
-        &lt;script&gt;
-        let exceptNum = 3;
-        for(let i = 0; i <= 100; i++) {
-            if(i % exceptNum == 0)
-            continue;
-            document.write( i + " ");
-        }
-            &lt;/script&gt;
-        </pre>
-
-        <h3 class="h3-1"> Quiz 7 </h3>
-
-        <p> <b>구구단에서 값이 홀 수인 경우만 출력</b><br></p>
-        <pre>
-        &lt;script&gt;
-
-        gugudan:
-        for( let i =2; i <=9; i++){
-            dan:
-            for(let j =1; j <=9; j++){
-                if((i*j)%2 ==0)
-                continue dan;
-                document.write(i +" * "+ J + " = " + (i*j) + "&lt;br&gt;");
-            }
-        }
-
-            &lt;/script&gt;
-        </pre>
-
-        <h3 class="h3-1"> Quiz 8 </h3>
-
-        <p> <b> 배열에서 특정값을 가지고 있는 인덱스를 출력</b><br></p>
-        <pre>
-        &lt;script&gt;
-
-        let cars = ["Volvo", "Fiat", "Mercedes", "Hyundai", "Kia"];
-        let numberOne = "Mercedes";
-        for( let i =0; i < cars.length; i++){
-            if(cars[i]==numberOne){
-                document.write(numberOne + " 는 " + (i +1) + "번째 차입니다.");
-                break;
-            }
-        }
-
-            &lt;/script&gt;
-        </pre>
-        <h3 class="h3-1"> Quiz 9 </h3>
-
-        <p> <b>  라벨을 이용하여 구구단을 3단까지만 출력</b><br></p>
-        <pre>
-        &lt;script&gt;
-
-        gugudan:
-        for( let i = 2; i <=9; i++){
-            dan:
-            for( let j = 1; j <=9; j++){
-                if(i>3)
-                break gugudan;
-                document.write(i + " * " + j + " = " + (i*j) + "&lt;br>");
-            }
-        }
-
-        &lt;/script&gt;
-        </pre>
         <h3 class="h3-1"> 18) 화살표 함수(Arrow Function) </h3>
 
         <pre>
-        &lt;p id="demo"&gt&lt;/p&gt
+        &lt;p id="demo"&gt&lt;/p&gt<br>
         &lt;script&gt;
-
             <mark>let myFunction = (a, b) =&gt a * b;</mark>
             document.getElementById("demo").innerHTML = myFunction(4, 5);
-
         &lt;/script&gt;
         </pre>
         <p><a href="https://velog.io/@leobit/%ED%95%A8%EC%88%98Function "target="_blank">화살표 함수 </a></p> 
@@ -356,6 +285,7 @@
                     JS를 HTML에 연결하려면 다음과 같이 쓰면된다.<br>
                     &lt;script src="app.js"&gt; &lt;/script&gt;
                 </p>
+               
 
 
         <!-- 
