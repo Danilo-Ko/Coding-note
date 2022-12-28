@@ -225,100 +225,15 @@
             리턴한다.
         </p>
 
-        <h3 class="h3-1"> Quiz 1 </h3>
-
-        <p> <>1번 100보다 작은 정수만을 입력받는 자바스크립트 프로그램을 작성해보자!</p>
-        <pre>
-            &lt;script&gt;
-
-            if(num>100){
-                alert("입력하신 값은" + num + "은(는) 100보다 큽니다"); // <mark>이 명령은 경고창에 띄운다.</mark>
-            }else{
-                document.write("입력하신 값은" + num + "으로 100보다 작습니다"); // <mark>이 명령은 웹브라우저 화면에 띄운다.</mark>
-            }
-
-            &lt;/script&gt;
-        </pre>
-
-        <h3 class="h3-1"> Quiz 2 </h3>
-        <p> <b>1부터 100까지의 합을 구하는 프로그램.</b>결과는 alert()를 호출해서 경고창으로 출력</p>
-        <pre>
-            &lt;script&gt;
-            
-            let x=0;
-            for(let i =0; i<=100; i++){
-                x +=i;
-            }
-            alert("1부터 100까지의 합은 " + x + "입니다.");
-
-            &lt;/script&gt;
-        </pre>
-
-        <h3 class="h3-1"> Quiz 3 </h3>
-
-        <p> <b>태양계의 모든 행성 배열하고 연속적으로 출력</b>결과는 alert()를 호출해서 경고창으로 출력<br></p>
-        <pre>
-            &lt;script&gt;
-            
-            let planeti=["Merkur", "Venera", "Zemlja", "Mars", "Jupiter", "Saturn", "Uran", "Neptun", "Pluton"];
-            for (let i =0; i<=planeti.length; i ++);
-            alert(planeti[i]);
-            }
-
-            &lt;/script&gt;
-        </pre>
-
-        <h3 class="h3-1"> Quiz 4 </h3>
-
-        <p> <b>Function</b> 연습<br></p>
-        <pre>
-            &lt;script&gt;
-            
-            function process (game){
-                if(game==true){
-                    alert("좋습니다. 게임을 시작합니다.")
-            }else{
-                alert("네. 나중에 하지요.");
-                } 
-            }
-            var game = confirm ("게임 한 판 하실래요?");
-            process(game);
-            
-            &lt;/script&gt;
-        </pre>
-
+        
        <h3 class="h3-1"> 15) confirm 하고 웹페이지에 출력 </h3>
 
-        <pre>
-            &lt;script&gt;
-            let i = confirm("확인을 누르면 웹페이지에 true 값이 출력됩니다!");
-            document.write(i);
-            &lt;/script&gt;
-        </pre>
-
-            <h3 class="h3-1"> Quiz 5 </h3>
-
-            <p> <b>객체 만들고 출력해보기</b> <br>
-                자신이 가장 좋아하는 곡을 저장하는 객체를 정의하여 본다.<br>
-            객체는 "가수", "연주시간", "제목" 등의 속성을 가진다.<br>
-        객체의 속성을 모두 출력하는 자바스크립트 프로그램을 작성하라!</p>
-            <pre>
-         &lt;script&gt;
-
-        function music () {
-            let song = {
-                "가수": "다윗과 요나단", // 객체 생성할 때 가운데 :이 들어간다.
-                "연주시간": "5분",
-                "제목": "담대하라"
-            }
-            document.write("그 노래의 제목은 " + song["제목"] + " 입니다.&lt;br/>");
-            document.write("제가 좋아하는 가수는" + song["가수"] + " 입니다.&lt;br/>");
-            document.write("그 노래의 연주시간은 " + song["연주시간"] + " 입니다.");
-            }
-            music()
-
-        &lt;/script&gt;
-        </pre>
+       <pre>
+           &lt;script&gt;
+           let i = confirm("확인을 누르면 웹페이지에 true 값이 출력됩니다!");
+           document.write(i);
+           &lt;/script&gt;
+       </pre>
 
         <h3 class="h3-1"> 16) 객체의 생성(리터럴 표기(literal notation) 이용) </h3>
          
@@ -416,6 +331,7 @@
 
         &lt;/script&gt;
         </pre>
+        <p><a href="https://velog.io/@leobit/%ED%95%A8%EC%88%98Function "target="_blank">화살표 함수 </a></p> 
 
         <h3 class="h3-1"> 19) if문 새로운 형태 </h3>
         <pre>
