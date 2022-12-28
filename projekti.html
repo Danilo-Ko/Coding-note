@@ -29,7 +29,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="projekti.html"class="current">프로젝트</a>
+                    <a href="projekti.html" class="current">프로젝트</a>
                 </li>
                 <li>
                     <a href="dnevnik.html">코딩일기</a>
@@ -40,8 +40,8 @@
             </ul>
 
             <a href="index.html"><img class="title" src="img/Coding Note.jpg" alt="Coding Note">
-        </a>
-        <a href="#home"><img class="strelica" src="img/strelica.png"></a>
+            </a>
+            <a href="#home"><img class="strelica" src="img/strelica.png"></a>
         </head>
 
         <style></style>
@@ -50,158 +50,302 @@
                 프로젝트
             </h1>
 
-            <p> 여러가지 작은 프로젝트를 하며 배우는 배용을 정리합니다.</P>
+            <p>
+                여러가지 작은 프로젝트를 하며 배우는 배용을 정리합니다.</p>
 
-            <h3 class="h3-1"> 1) 각종 환산식 </h3>
-            
-            <p><a href="https://danilo-ko.github.io/Unit-caculator/ "target="_blank">각종 환산식 </a></p> 
+            <h3 class="h3-1">
+                1) 각종 환산식
+            </h3>
 
+            <p>
+                <a href="https://danilo-ko.github.io/Unit-caculator/ " target="_blank">각종 환산식
+                </a>
+            </p>
 
-                    <h3 class="h3-1"> 2) 그림판 만들기 </h3>
+            <h3 class="h3-1">
+                2) 그림판 만들기
+            </h3>
 
+            <p>
+                <b>이미지를 삽입하기 위해서</b>
+                <br>
+                1) HTML에서 file input을 만들고 event listener를 추가한다. 이미지 구현을 위한 Event를 만들 때는 click 이
+                아닌 change로 해야.
+                <br>
+                2) 파일을 선택하면 업로드한 파일을 가져오고 그 파일을 가리키는 URL을 요청한다.
+                <br>
+                3) 이미지를 만들기 위해서 이미지의 URL을 설정해야함.<br>
+                4) 이미지가 로딩되면 canvas에 이미지를 그린다.
+            </p>
 
-                    <p><b>이미지를 삽입하기 위해서</b> <br>
-                        1) HTML에서 file input을 만들고 event listener를 추가한다. 이미지 구현을 위한 Event를 만들 때는 click 이 아닌 change로 해야. <br>
-                        2) 파일을 선택하면 업로드한 파일을 가져오고 그 파일을 가리키는 URL을 요청한다. <br>
-                        3) 이미지를 만들기 위해서 이미지의 URL을 설정해야함.<br>
-                        4) 이미지가 로딩되면 canvas에 이미지를 그린다.
-                    </P>
-                    
-                    <p><b> 그림판에서 그림 저장 </b></P>  
-                        <p> 1) url 선언(canvas.toDataURL())<br>
-                            2) a 선언 (document.createElement) <br>
-                            3) a 에 링크 연결<br>
-                            4) a 다운로드 하도록 이름을 지정.<br>
-                            5) a 클릭할 수 있게 함.<br>
-                        </P>
-                    <p><b> 텍스트 입력 </b></P>  
-                    <p> 1) Event를 더블클릭으로 (dblclick) <br>
-                        2) text 값을 선언(텍스트에 대한 정의)<br>
-                        3) fillText<br>
-                    </P>
-                    <p><b> Array.prototype.pop() </b></p>
+            <p>
+                <b>
+                    그림판에서 그림 저장
+                </b>
+            </p>
+            <p>
+                1) url 선언(canvas.toDataURL())<br>
+                2) a 선언 (document.createElement)
+                <br>
+                3) a 에 링크 연결<br>
+                4) a 다운로드 하도록 이름을 지정.<br>
+                5) a 클릭할 수 있게 함.<br>
+            </p>
+            <p>
+                <b>
+                    텍스트 입력
+                </b>
+            </p>
+            <p>
+                1) Event를 더블클릭으로 (dblclick)
+                <br>
+                2) text 값을 선언(텍스트에 대한 정의)<br>
+                3) fillText<br>
+            </p>
+            <p>
+                <b>
+                    Array.prototype.pop()
+                </b>
+            </p>
+            <p>
+                pop() 메서드는 배열에서 마지막 요소를 제거하고 그 요소를 반환합니다.
+            </p>
+            <p>
+                <a
+                    href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/pop "
+                    target="_blank">Array.prototype.pop() 참고
+                </a>
+            </p>
+
+            <p>
+                <b>
+                    그림판 V2 완성 후 과제
+                </b>
+            </p>
+            <p>
+                1) 그림판에 입력하는 글자 크기를 자유롭게 조절. (노마트 코드의 회원님의 작품을 통해 배움)<br>
+                2) 글꼴 변경(노마트 코드의 회원님의 작품을 통해 배움) ctx.font 에는 항상 글꼴 크기와 글꼴이 같이 가야한다.<br>
+                <참고 링크="링크">
+                    <a
+                        href="https://developer.mozilla.org/ko/docs/Web/API/Canvas_API/Tutorial/Drawing_text"
+                        target="_blank">ctx.font 에 대해서
+                    </a><br>
+                    3) 입력된 글자들을 원하는 곳으로 이동.<br>
+                    4) 뒤로 가기, 앞으로 가기 구현. 12월 23일 뒤로가기 기능에 대해서 좀 공부해봤는데 쉽지가 않은 것 같다. 더 많은 공부가 필요할 것
+                    같다.
+                </p>
+                <p>
+                    <b>완성된 그림판 V2
+                    </b>
+                </p>
+                <p>
+                    <a href="https://danilo-ko.github.io/Paint-JS-Meme/" target="_blank">
+                        완성된 그림판 V2</a>
+                </p>
+
+                <h3 class="h3-1">
+                    3) 게시판 만들기
+                </h3>
+                <p>
+                    <b>게시판을 만들어 글들을 깔끔하게 정리</b><br>
                     <p>
-                        pop() 메서드는 배열에서 마지막 요소를 제거하고 그 요소를 반환합니다. </p>
-                        <p><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/pop "target="_blank">Array.prototype.pop() 참고 </a></p> 
+                        모르긴 해도 게시판을 만들려면 백엔드까지 해야하는 것으로 알고 있다. 쉽지 않은 프로젝트가 될 것 같다!.
+                    </p>
 
-                    <p><b> 그림판 V2 완성 후 과제 </b></P>
-                    <p> 1) 그림판에 입력하는 글자 크기를 자유롭게 조절. (노마트 코드의 회원님의 작품을 통해 배움) <br>
-                        2) 글꼴 변경(노마트 코드의 회원님의 작품을 통해 배움)
-                        ctx.font 에는 항상 글꼴 크기와 글꼴이 같이 가야한다. <br>
-                        <참고 링크>
-                        <a href="https://developer.mozilla.org/ko/docs/Web/API/Canvas_API/Tutorial/Drawing_text"
-                            target="_blank">ctx.font 에 대해서 </a><br>
-                        3) 입력된 글자들을 원하는 곳으로 이동.<br>
-                        4) 뒤로 가기, 앞으로 가기 구현. 12월 23일 뒤로가기 기능에 대해서 좀 공부해봤는데 쉽지가 않은 것 같다. 더 많은 공부가 필요할 것 같다.
-                    </P>
-                    <p><b>완성된 그림판 V2 </b></p>  
-                <p><a href="https://danilo-ko.github.io/Paint-JS-Meme/"target="_blank"> 완성된 그림판 V2</a></p> 
+                    <h3 class="h3-1">
+                        4) 계산기 만들기
+                    </h3>
+                    <p>
+                        <b></b>
+                    </p>
+                    <p>
+                        전에 한 번 살펴본 적이 있는데 그렇게까지 어려울 것 같다는 생각이 들지는 않지만 만만치 않을 것 같다.</p>
+                    <h3 class="h3-1">
+                        5) 홈페이지 레이아웃 변경
+                    </h3>
+                    <p>
+                        해당 페이지를 들어갔을 때 그 페이지가 어느 페이지인지 알 수가 없다. 위쪽의 네비게이션을 빼고 왼쪽 편에 메뉴판이 트리 구조로 보이고 거기에
+                        표시가 되어야 할 것 같다.
+                    </p>
 
-                    <h3 class="h3-1"> 3) 게시판 만들기 </h3>
-                    <p><b>게시판을 만들어 글들을 깔끔하게 정리</b> <br>
-                        <p> 모르긴 해도 게시판을 만들려면 백엔드까지 해야하는 것으로 알고 있다. 쉽지 않은 프로젝트가 될 것 같다!. </p>
-                    
-                        <h3 class="h3-1"> 4) 계산기 만들기 </h3>  
-                        <p><b> </b></p>  
-                        <p> 전에 한 번 살펴본 적이 있는데 그렇게까지 어려울 것 같다는 생각이 들지는 않지만 만만치 않을 것 같다.</p>  
-                        <h3 class="h3-1"> 4) 홈페이지 레이아웃 변경 </h3> 
-                        <p><b> </b></p> 
-                        <p> 해당 페이지를 들어갔을 때 그 페이지가 어느 페이지인지 알 수가 없다. 위쪽의 네비게이션을 빼고 왼쪽 편에 메뉴판이 트리 구조로 보이고 거기에 표시가 되어야 할 것 같다.  </p> 
+                    <h3 class="h3-1"> 6) Quiz 1 </h3>
 
-
-                        <h3 class="h3-1"> 5) Quiz 1 </h3>
-
-        <p> <>1번 100보다 작은 정수만을 입력받는 자바스크립트 프로그램을 작성해보자!</p>
-        <pre>
-            &lt;script&gt;
-
-            if(num>100){
-                alert("입력하신 값은" + num + "은(는) 100보다 큽니다"); // <mark>이 명령은 경고창에 띄운다.</mark>
-            }else{
-                document.write("입력하신 값은" + num + "으로 100보다 작습니다"); // <mark>이 명령은 웹브라우저 화면에 띄운다.</mark>
-            }
-
-            &lt;/script&gt;
-        </pre>
-
-        <h3 class="h3-1"> 6) Quiz 2 </h3>
-        <p> <b>1부터 100까지의 합을 구하는 프로그램.</b>결과는 alert()를 호출해서 경고창으로 출력</p>
-        <pre>
-            &lt;script&gt;
+                    <p> <>1번 100보다 작은 정수만을 입력받는 자바스크립트 프로그램을 작성해보자!</p>
+                    <pre>
+                        &lt;script&gt;
             
-            let x=0;
-            for(let i =0; i<=100; i++){
-                x +=i;
-            }
-            alert("1부터 100까지의 합은 " + x + "입니다.");
-
-            &lt;/script&gt;
-        </pre>
-
-        <h3 class="h3-1"> 7) Quiz 3 </h3>
-
-        <p> <b>태양계의 모든 행성 배열하고 연속적으로 출력</b>결과는 alert()를 호출해서 경고창으로 출력<br></p>
-        <pre>
-            &lt;script&gt;
+                        if(num>100){
+                            alert("입력하신 값은" + num + "은(는) 100보다 큽니다"); // <mark>이 명령은 경고창에 띄운다.</mark>
+                        }else{
+                            document.write("입력하신 값은" + num + "으로 100보다 작습니다"); // <mark>이 명령은 웹브라우저 화면에 띄운다.</mark>
+                        }
             
-            let planeti=["Merkur", "Venera", "Zemlja", "Mars", "Jupiter", "Saturn", "Uran", "Neptun", "Pluton"];
-            for (let i =0; i<=planeti.length; i ++);
-            alert(planeti[i]);
-            }
-
-            &lt;/script&gt;
-        </pre>
-
-        <h3 class="h3-1"> 8) Quiz 4 </h3>
-
-        <p> <b>Function</b> 연습<br></p>
-        <pre>
-            &lt;script&gt;
+                        &lt;/script&gt;
+                    </pre>
             
-            function process (game){
-                if(game==true){
-                    alert("좋습니다. 게임을 시작합니다.")
-            }else{
-                alert("네. 나중에 하지요.");
-                } 
-            }
-            var game = confirm ("게임 한 판 하실래요?");
-            process(game);
+                    <h3 class="h3-1"> 7) Quiz 2 </h3>
+                    <p> <b>1부터 100까지의 합을 구하는 프로그램.</b>결과는 alert()를 호출해서 경고창으로 출력</p>
+                    <pre>
+                        &lt;script&gt;
+                        
+                        let x=0;
+                        for(let i =0; i<=100; i++){
+                            x +=i;
+                        }
+                        alert("1부터 100까지의 합은 " + x + "입니다.");
             
-            &lt;/script&gt;
-        </pre>
+                        &lt;/script&gt;
+                    </pre>
+            
+                    <h3 class="h3-1"> 8) Quiz 3 </h3>
+            
+                    <p> <b>태양계의 모든 행성 배열하고 연속적으로 출력</b>결과는 alert()를 호출해서 경고창으로 출력<br></p>
+                    <pre>
+                        &lt;script&gt;
+                        
+                        let planeti=["Merkur", "Venera", "Zemlja", "Mars", "Jupiter", "Saturn", "Uran", "Neptun", "Pluton"];
+                        for (let i =0; i<=planeti.length; i ++);
+                        alert(planeti[i]);
+                        }
+            
+                        &lt;/script&gt;
+                    </pre>
 
+                        <h3 class="h3-1">
+                            9) Quiz 4
+                        </h3>
 
-            <h3 class="h3-1"> 9) Quiz 5 </h3>
+                        <p>
+                            <b>Function</b>
+                            연습<br></p>
+                        <pre>
+                            &lt;script&gt;
+                            
+                            function process (game){
+                                if(game==true){
+                                    alert("좋습니다. 게임을 시작합니다.")
+                            }else{
+                                alert("네. 나중에 하지요.");
+                                } 
+                            }
+                            var game = confirm ("게임 한 판 하실래요?");
+                            process(game);
+                            
+                            &lt;/script&gt;
+                        </pre>
 
-            <p> <b>객체 만들고 출력해보기</b> <br>
-                자신이 가장 좋아하는 곡을 저장하는 객체를 정의하여 본다.<br>
-            객체는 "가수", "연주시간", "제목" 등의 속성을 가진다.<br>
-        객체의 속성을 모두 출력하는 자바스크립트 프로그램을 작성하라!</p>
-            <pre>
-         &lt;script&gt;
+                        <h3 class="h3-1">
+                            10) Quiz 5
+                        </h3>
 
-        function music () {
-            let song = {
-                "가수": "다윗과 요나단", // 객체 생성할 때 가운데 :이 들어간다.
-                "연주시간": "5분",
-                "제목": "담대하라"
-            }
-            document.write("그 노래의 제목은 " + song["제목"] + " 입니다.&lt;br/>");
-            document.write("제가 좋아하는 가수는" + song["가수"] + " 입니다.&lt;br/>");
-            document.write("그 노래의 연주시간은 " + song["연주시간"] + " 입니다.");
-            }
-            music()
+                        <p>
+                            <b>객체 만들고 출력해보기</b>
+                            <br>
+                            자신이 가장 좋아하는 곡을 저장하는 객체를 정의하여 본다.<br>
+                            객체는 "가수", "연주시간", "제목" 등의 속성을 가진다.<br>
+                            객체의 속성을 모두 출력하는 자바스크립트 프로그램을 작성하라!</p>
+                        <pre>
+                     &lt;script&gt;
+            
+                    function music () {
+                        let song = {
+                            "가수": "다윗과 요나단", // 객체 생성할 때 가운데 :이 들어간다.
+                            "연주시간": "5분",
+                            "제목": "담대하라"
+                        }
+                        document.write("그 노래의 제목은 " + song["제목"] + " 입니다.&lt;br/>");
+                        document.write("제가 좋아하는 가수는" + song["가수"] + " 입니다.&lt;br/>");
+                        document.write("그 노래의 연주시간은 " + song["연주시간"] + " 입니다.");
+                        }
+                        music()
+            
+                    &lt;/script&gt;
+                    </pre>
 
-        &lt;/script&gt;
-        </pre>
-        <!-- 
-            <h3 class="h3-1"> </h3> 
-            <p><b> </b></p> 
-            <p> </p> 
-            <p><a href=" "target="_blank"> </a></p> 
-        -->
+                        <h3 class="h3-1">
+                            11) Quiz 6
+                        </h3>
 
-                </body>
+                        <p>
+                            <b>1에서 100까지 3의 배수만 제외하고 출력</b><br></p>
+                        <pre>
+                        &lt;script&gt;
+                        let exceptnum = 3;
+                        for(let i = 0; i <= 100; i++) {
+                            if(i % exceptnum == 0)
+                            continue;
+                            document.write( i + " ");
+                        }
+                            &lt;/script&gt;
+                        </pre>
+
+                        <h3 class="h3-1">
+                            12) Quiz 7
+                        </h3>
+
+                        <p>
+                            <b>구구단에서 값이 홀 수인 경우만 출력</b><br></p>
+                        <pre>
+                        &lt;script&gt;
                 
-    </html>
+                        gugudan:
+                        for( let i =2; i <=9; i++){
+                            dan:
+                            for(let j =1; j <=9; j++){
+                                if((i*j)%2 ==0)
+                                continue dan;
+                                document.write(i +" * "+ j + " = " + (i*j) + "&lt;br&gt;");
+                            }
+                        }
+                
+                            &lt;/script&gt;
+                        </pre>
+
+                        <h3 class="h3-1">
+                            13) Quiz 8
+                        </h3>
+
+                        <p>
+                            <b>
+                                배열에서 특정값을 가지고 있는 인덱스를 출력</b><br></p>
+                        <pre>
+                        &lt;script&gt;
+                
+                        let cars = ["volvo", "fiat", "mercedes", "hyundai", "kia"];
+                        let numberone = "mercedes";
+                        for( let i =0; i < cars.length; i++){
+                            if(cars[i]==numberone){
+                                document.write(numberone + " 는 " + (i +1) + "번째 차입니다.");
+                                break;
+                            }
+                        }
+                
+                            &lt;/script&gt;
+                        </pre>
+                        <h3 class="h3-1">
+                            14) Quiz 9
+                        </h3>
+
+                        <p>
+                            <b>
+                                라벨을 이용하여 구구단을 3단까지만 출력</b><br></p>
+                        <pre>
+                        &lt;script&gt;
+                
+                        gugudan:
+                        for( let i = 2; i <=9; i++){
+                            dan:
+                            for( let j = 1; j <=9; j++){
+                                if(i>3)
+                                break gugudan;
+                                document.write(i + " * " + j + " = " + (i*j) + "&lt;br>");
+                            }
+                        }
+                
+                        &lt;/script&gt;
+                        </pre>
+
+                        <!-- <h3 class="h3-1"> </h3> <p><b> </b></p>
+                        <p></p><p><ahref=""target="_blank"></a></p> -->
+                    </body>
+                </html>
